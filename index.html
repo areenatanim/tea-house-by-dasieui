@@ -13,12 +13,26 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+     <!-- css styles -->
      <style>
           .manrope {
                font-family: "Manrope", sans-serif;
                font-optical-sizing: auto;
           }
      </style>
+     <!-- custom color styles -->
+     <script>
+          tailwind.config = {
+               theme: {
+                    extend: {
+                         colors: {
+                              primarycolor: '#1C1C1C',
+                              textcolor: '#777',
+                         }
+                    }
+               }
+          }
+     </script>
 </head>
 <!-- this is the body section -->
 
@@ -27,20 +41,20 @@
      <header class="container mx-auto">
           <!-- this is banner section -->
           <div class="hero ">
-               <div class="hero-content flex-col lg:flex-row-reverse gap-10">
-                    <div>
-                         <img src="./images/banner.png" class="max-w-sm " />
-                         <div class="-m-20 flex items-center gap-4 drop-shadow bg-white  p-5 w-60">
+               <div class="hero-content flex-col lg:flex-row-reverse gap-10 ml-20">
+                    <div class="ml-10 ">
+                         <img src="./images/banner.png" class="max-w-sm  " />
+                         <div class="-m-20  flex items-center gap-4 drop-shadow bg-white  p-5 w-60">
                               <div>
                                    <div class="rating">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                        
+
                                    </div>
 
                               </div>
                               <div>
                                    <h3 class="text-3xl">5.50</h3>
-                                   <p>Trust Pilot Ratings</p>
+                                   <p class="text-slate-400">Trust Pilot Ratings</p>
                               </div>
                          </div>
                     </div>
@@ -49,7 +63,7 @@
                               It's good <br>
                               tea time at The <br>
                               Tea House</h1>
-                         <p class="py-6">
+                         <p class="py-6 text-slate-400">
                               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                          </p>
                          <button class="btn btn-primary bg-gradient-to-r from-purple-500 to-pink-500">Explore More
@@ -60,7 +74,81 @@
           </div>
 
      </header>
-     <main>
+     <!-- this is main section -->
+     <main class="container mx-auto">
+          <!--  Featured Products section-->
+          <section class="text-center my-24 ">
+               <h3 class=" text-5xl font-extrabold primarycolor ">Our Featured Products</h3>
+
+               <p class=" text-slate-400 mt-4 lg:max-w-4xl mx-auto">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.
+               </p>
+               <!-- card continer -->
+               <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 mt-12">
+                    <!-- first card -->
+                    <div>
+                         <div class="card bg-secondary-content  shadow-xl">
+                              <figure class="px-10 pt-10">
+                                   <img src="./images/tea-1.png" alt="Shoes" class="rounded-xl" />
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                   <h2 class="card-title">Milk Tea</h2>
+                                   <p class="text-slate-400">Creamer could be replaced by fresh milk</p>
+                                   <div class="card-actions">
+                                        <button class="btn btn-primary">Buy Now</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                     <!-- second card -->
+                    <div>
+                         <div class="card bg-secondary-content  shadow-xl">
+                              <figure class="px-10 pt-10">
+                                   <img src="./images/tea-2.png" alt="Shoes" class="rounded-xl" />
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                   <h2 class="card-title">Milk Tea</h2>
+                                   <p class="text-slate-400">Creamer could be replaced by fresh milk</p>
+                                   <div class="card-actions">
+                                        <button class="btn btn-primary">Buy Now</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div> 
+                    <!-- third card -->
+                    <div>
+                         <div class="card bg-secondary-content  shadow-xl">
+                              <figure class="px-10 pt-10">
+                                   <img src="./images/tea-3.png" alt="Shoes" class="rounded-xl" />
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                   <h2 class="card-title">Milk Tea</h2>
+                                   <p class="text-slate-400">Creamer could be replaced by fresh milk</p>
+                                   <div class="card-actions">
+                                        <button class="btn btn-primary">Buy Now</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div> 
+                    <!-- fourth card -->
+                    <div>
+                         <div class="card bg-secondary-content  shadow-xl">
+                              <figure class="px-10 pt-10">
+                                   <img src="./images/tea-4.png" alt="Shoes" class="rounded-xl" />
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                   <h2 class="card-title">Milk Tea</h2>
+                                   <p class="text-slate-400">Creamer could be replaced by fresh milk</p>
+                                   <div class="card-actions">
+                                        <button class="btn btn-primary">Buy Now</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div> 
+                    
+          </section>
 
      </main>
 
